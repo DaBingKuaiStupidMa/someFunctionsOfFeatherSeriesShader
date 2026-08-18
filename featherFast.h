@@ -25,7 +25,7 @@ float getTetha(float cosin, float sine){ // 0.5/pi included
     )+AixSin.x; return tetha; // @大冰块stupid吗
 }
 /* 涟漪与水洼(纯程序):
-* chunkXY 的数值在 [0,16)^2, h 取自 POSITION.z, 是0到15内的整数, t不限(可用TOTAL_REAL_WORLD_TIME)
+* chunkXY 的数值在 [0,16)^2, h 取自 POSITION.y, 是0到15内的整数, t不限(可用TOTAL_REAL_WORLD_TIME)
 * 返回涟漪向量 vec2 ripl 与水洼原料 float noise 合成的 vec3(ripl, noise)
     * ripl 的振幅最大为 1, 用法如 normal.xz +=riplNoise.xy *0.1919810
     * 涟漪按区块在空间上周期重复, 以 16s 周期在时间上重复
